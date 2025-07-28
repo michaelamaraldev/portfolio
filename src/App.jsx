@@ -31,8 +31,8 @@ function App() {
         <Projetos />
         <Contato />
         <footer className="text-center py-4 text-gray-400 border-t border-gray-600 mt-12">
-          <div className="flex justify-center items-center text-sm"> {/* Reduced text size */}
-            <p className="mb-0 flex items-center gap-1"> {/* Aligned items and reduced gap */}
+          <div className="flex justify-center items-center text-sm">
+            <p className="mb-0 flex items-center gap-1"> 
               {actualYear} © Desenvolvido por{' '}
               <a
                 href="https://github.com/michaelamaraldev"
@@ -40,16 +40,16 @@ function App() {
                 rel="noreferrer"
                 className="hover:text-purple-400 flex items-center gap-1"
               >
-                <FaGithub size={16} /> Michael Amaral {/* Explicitly set icon size */}
+                <FaGithub size={16} /> Michael Amaral
               </a>
               <a
                 href="https://www.linkedin.com/in/michaelamaraldev"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-purple-400 transition-colors ml-2" // Removed the JS comment from inside the string
+                className="hover:text-purple-400 transition-colors ml-2"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin size={16} /> {/* Explicitly set icon size */}
+                <FaLinkedin size={16} /> 
               </a>
             </p>
           </div>
