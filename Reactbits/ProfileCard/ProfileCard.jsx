@@ -37,9 +37,9 @@ const easeInOutCubic = (x) =>
   x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 
 const ProfileCardComponent = ({
-  avatarUrl = <img src="https://michaelamaraldev.github.io/portfolio/src/assets/avatar.jpg" alt="Avatar">,
-  iconUrl = <img src="https://michaelamaraldev.github.io/portfolio/src/assets/avatar.jpg" alt="Avatar">,
-  grainUrl = <img src="https://michaelamaraldev.github.io/portfolio/src/assets/avatar.jpg" alt="Avatar">,
+  avatarUrl = <img src="https://imgur.com/a/1phn2z9" alt="Avatar">,
+  iconUrl = <img src="https://imgur.com/a/1phn2z9" alt="Avatar">,
+  grainUrl = <img src="https://imgur.com/a/UmK7q0f" alt="Avatar">,
   behindGradient,
   innerGradient,
   showBehindGradient = true,
