@@ -42,7 +42,7 @@ export const Inicio = () => {
                 handle="michaelamaraldev"
                 status="Online"
                 contactText="Contato"
-                avatarUrl="/src/assets/avatar.jpg"
+                avatarUrl="src/assets/avatar.jpg"
                 showUserInfo={true}
                 enableTilt={true}
                 enableMobileTilt={false}
