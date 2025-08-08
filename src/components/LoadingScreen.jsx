@@ -15,11 +15,11 @@ export const LoadingScreen = ({ onComplete }) => {
 
                 setTimeout(() => {
                     onComplete();
-                }, 1000); // espera 1 segundo antes de completar
+                }, 1000);
             }
         }, 100);
         
-        return () => clearInterval(interval); // limpa o intervalo
+        return () => clearInterval(interval);
     }, [onComplete]);
 
     return (
