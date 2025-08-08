@@ -9,7 +9,7 @@ export const Inicio = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 w-full max-w-6xl">
           
           <div className="text-center lg:text-left z-10 max-w-xl order-2 lg:order-1">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent leading-tight text-shadow">
               Cada commit, uma evolução.
             </h1>
             <p className="text-gray-300 text-lg sm:text-xl md:text-2xl mb-6 lg:mb-8">
@@ -34,7 +34,7 @@ export const Inicio = () => {
             </div>
           </div>
           
-          <div className="z-10 order-1 lg:order-2 flex-shrink-0">
+          <div className="z-10 order-1 lg:order-2 flex-shrink-0 animate-float">
             <div className="scale-90 sm:scale-100">
               <ProfileCard
                 name="Michael Amaral"

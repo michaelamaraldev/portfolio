@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ScrollReveal } from "../ScrollReveal";
+import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 export const Contato = () => {
@@ -28,13 +29,62 @@ export const Contato = () => {
   return (
     <section
       id="contato"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-12"
     >
       <ScrollReveal>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+        <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent text-center">
             Entre em contato
           </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4 text-purple-300">Vamos conversar!</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                   Entre em contato comigo através do formulário ou pelas redes sociais.
+                 </p>
+                
+                <div className="space-y-4">
+                  <a 
+                     href="mailto:michaelzerotreze@gmail.com"
+                     className="flex items-center gap-3 text-gray-300 hover:text-purple-300 transition-colors group"
+                   >
+                     <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                       <FaEnvelope className="text-purple-400" />
+                     </div>
+                     <span>michaelzerotreze@gmail.com</span>
+                   </a>
+                  
+                  <a 
+                    href="https://github.com/michaelamaraldev"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-300 hover:text-purple-300 transition-colors group"
+                  >
+                    <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                      <FaGithub className="text-purple-400" />
+                    </div>
+                    <span>GitHub</span>
+                  </a>
+                  
+                  <a 
+                    href="https://www.linkedin.com/in/michaelamaraldev"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-3 text-gray-300 hover:text-purple-300 transition-colors group"
+                  >
+                    <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                      <FaLinkedin className="text-purple-400" />
+                    </div>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all">
+              <h3 className="text-xl font-bold mb-6 text-purple-300">Envie uma mensagem</h3>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
@@ -87,7 +137,9 @@ export const Contato = () => {
             >
               Envie o e-mail
             </button>
-          </form>
+              </form>
+            </div>
+          </div>
         </div>
       </ScrollReveal>
     </section>

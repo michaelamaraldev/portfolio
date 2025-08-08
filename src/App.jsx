@@ -30,7 +30,7 @@ function App() {
         <Sobre />
         <Projetos />
         <Contato />
-        <footer className="text-center py-4 text-gray-400 border-t border-gray-600 mt-12">
+        <footer className="text-center py-4 text-gray-400 border-t border-purple-500/20 mt-8">
           <div className="flex justify-center items-center text-sm">
             <p className="mb-0 flex items-center gap-1"> 
               {actualYear} © Desenvolvido por{' '}
